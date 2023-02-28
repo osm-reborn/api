@@ -1,0 +1,16 @@
+<Map bgcolor="#6699ff" srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs">
+    <Style name="poly style 1">
+        <Rule><PolygonSymbolizer><CssParameter name="fill">#66ff99</CssParameter></PolygonSymbolizer></Rule>
+    </Style>
+    <Style name="line style 2">
+        <Rule><LineSymbolizer><CssParameter name="stroke">#669966</CssParameter><CssParameter name="stroke-width">1</CssParameter></LineSymbolizer></Rule>
+    </Style>
+    <Layer name="layer 3" srs="+proj=latlong +ellps=WGS84 +datum=WGS84 +no_defs" status="on">
+        <StyleName>poly style 1</StyleName>
+        <StyleName>line style 2</StyleName>
+        <Datasource>
+            <Parameter name="type">shape</Parameter>
+            <Parameter name="file">world_borders</Parameter>
+        </Datasource>
+    </Layer>
+</Map>
